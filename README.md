@@ -3,6 +3,7 @@
 **Instituição:** Faculdade Senac Joinville | 5ª Fase ADS
 **Unidade Curricular:** Desenvolvimento para Dispositivos Móveis 
 **Atividade:** Prática Aula 9 - Tela Animada 
+**Equipe:** Gabriel G. Motta e João V. Prestes
 
 ---
 
