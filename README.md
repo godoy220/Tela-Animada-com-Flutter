@@ -1,13 +1,13 @@
 # Galeria de Animações - Flutter
 
-**Instituição:** Faculdade Senac Joinville | [cite_start]5ª Fase ADS [cite: 2, 3]  
-[cite_start]**Unidade Curricular:** Desenvolvimento para Dispositivos Móveis [cite: 1]  
-[cite_start]**Atividade:** Prática Aula 9 - Tela Animada 
+**Instituição:** Faculdade Senac Joinville | 5ª Fase ADS
+**Unidade Curricular:** Desenvolvimento para Dispositivos Móveis 
+**Atividade:** Prática Aula 9 - Tela Animada 
 
 ---
 
 ## Objetivo
-[cite_start]Aplicar os conceitos de animações implícitas, explícitas e componentes customizados do Flutter utilizando Material Design 3[cite: 7].
+Aplicar os conceitos de animações implícitas, explícitas e componentes customizados do Flutter utilizando Material Design 3.
 
 ## Sobre o Projeto
 O projeto consiste em um aplicativo de **Galeria de Produtos** que utiliza diferentes técnicas de animação para garantir uma fluidez natural e excelente experiência do usuário. 
