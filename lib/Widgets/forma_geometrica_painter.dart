@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// Requisito BÔNUS: CustomPainter desenhando formas geométricas
 class FormaGeometricaPainter extends CustomPainter {
   final Color corBase;
 
@@ -8,26 +7,41 @@ class FormaGeometricaPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = corBase.withValues(alpha: 0.05)
+    final circlePaint = Paint()
+      ..color = corBase.withValues(alpha: 0.06)
       ..style = PaintingStyle.fill;
 
-    // Desenhando círculos decorativos no fundo da tela
-    canvas.drawCircle(Offset(size.width * 0.8, size.height * 0.15), 150, paint);
-    canvas.drawCircle(Offset(size.width * 0.1, size.height * 0.85), 200, paint);
-    
-    final pathPaint = Paint()
-      ..color = corBase.withValues(alpha: 0.1)
+    canvas.drawCircle(
+      Offset(size.width * 0.85, size.height * 0.18),
+      150,
+      circlePaint,
+    );
+
+    canvas.drawCircle(
+      Offset(size.width * 0.08, size.height * 0.82),
+      190,
+      circlePaint,
+    );
+
+    final linePaint = Paint()
+      ..color = corBase.withValues(alpha: 0.12)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3;
-      
+
     final path = Path()
-      ..moveTo(0, size.height * 0.4)
-      ..quadraticBezierTo(size.width / 2, size.height * 0.5, size.width, size.height * 0.3);
-      
-    canvas.drawPath(path, pathPaint);
+      ..moveTo(0, size.height * 0.42)
+      ..quadraticBezierTo(
+        size.width / 2,
+        size.height * 0.52,
+        size.width,
+        size.height * 0.34,
+      );
+
+    canvas.drawPath(path, linePaint);
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant FormaGeometricaPainter oldDelegate) {
+    return oldDelegate.corBase != corBase;
+  }
 }

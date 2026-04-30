@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// Requisito 5: Widget Customizado Reutilizável com parâmetros e const constructor
 class EtiquetaEstilizada extends StatelessWidget {
   final String texto;
   final Color corFundo;
@@ -16,18 +15,27 @@ class EtiquetaEstilizada extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      padding: const EdgeInsets.symmetric(
+        horizontal: 12,
+        vertical: 7,
+      ),
       decoration: BoxDecoration(
         color: corFundo.withValues(alpha: 0.15),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: corFundo.withValues(alpha: 0.5)),
+        borderRadius: BorderRadius.circular(30),
+        border: Border.all(
+          color: corFundo.withValues(alpha: 0.55),
+        ),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           if (icone != null) ...[
-            Icon(icone, size: 16, color: corFundo),
-            const SizedBox(width: 4),
+            Icon(
+              icone,
+              size: 16,
+              color: corFundo,
+            ),
+            const SizedBox(width: 5),
           ],
           Text(
             texto,
